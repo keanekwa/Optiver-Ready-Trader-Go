@@ -27,7 +27,7 @@ While the above models were effective by themselves, they performed poorly when 
 As such, we decided to switch to a market-neutral market-making approach instead, whereby we seeked to profit from trading the bid-ask spread. This was implemented in the following strategies:
 - Mid-price trader. Refer to [midtrader.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/midtrader.py)
 - Mid-price trader with adjustment for current inventory levels. Theoretically this should be more profitable than the midtrader above, but it was not the case for us. Refer to [midtraderInvAdj.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/midtraderInvAdj.py)
-- Avellaneda-Stoikov Market Making Model. This model allowed us to adjust for inventory and volatility in a much more profitable way. Refer to [ASModel.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/ASModel.py)
+- [Final model that was submitted] Avellaneda-Stoikov Market Making Model. This model allowed us to adjust for inventory and volatility in a much more profitable way. Refer to [ASModel.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/ASModel.py)
 
 From extensive testing, we concluded that the Avellaneda-Stoikov Market Making Model was the most reliable model across different market conditions.
 
