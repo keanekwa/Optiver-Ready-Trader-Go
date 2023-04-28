@@ -12,16 +12,22 @@ The Future was highly liquid, while the ETF was highly illiquid.
 
 <img width="574" alt="image" src="https://user-images.githubusercontent.com/8297863/235014437-95749871-a6e3-42e7-9233-6982be55db20.png">
 
-We were also provided with some basic template files (refer to the /ready_trader_go folder) and some market data for backtesting (refer to the /market_data folder) to interface with the trading system, and we had to follow these [competition rules](https://readytradergo.optiver.com/how-to-play/).
+We were also provided with some basic template files (refer to the [/ready_trader_go](https://github.com/keanekwa/Optiver-Ready-Trader-Go/tree/main/ready_trader_go) folder) and some market data for backtesting (refer to the [/data](https://github.com/keanekwa/Optiver-Ready-Trader-Go/tree/main/data) folder) to interface with the trading system, and we had to follow these [competition rules](https://readytradergo.optiver.com/how-to-play/).
 
 ## Models We Tried
 
-We tried out a variety of different strategies including:
-1. Avellaneda-Stoikov Market Making Model
-2. Arbitrage strategy between the ETF and Future, whereby we bought the underpriced instrument and sold the overpriced instrument
-3. Arbitrage strategy that took into account the momentum of the prices (e.g. if both the ETF and Future prices are going up, buy more of the underpriced instrument, and sell a smaller quantity of the overpriced instrument)
-4. Mid-price trader
-5. Mid-price trader with adjustment for current inventory levels
+We tried out a variety of different strategies, which can be split into 2 categories: arbitrage through pairs trading, and market making around the midprice.
+
+We first started by experimenting with the arbitrage strategies, where we performed pairs trading on the ETF and Future by buying the underpriced instrument and selling the overpriced instrument. This was implemented in the following strategies:
+- Arbitrage strategy between the ETF and Future. Refer to [arbitrage.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/arbitrage.py)
+- Arbitrage strategy that took into account the momentum of the prices (e.g. if both the ETF and Future prices are going up, buy more of the underpriced instrument, and sell a smaller quantity of the overpriced instrument). Refer to [momentumArbitrage.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/momentumArbitrage.py)
+
+While the above models were effective by themselves, they performed poorly when put alongside other traders, due to the diminishing amount of arbitrage opportunities for each trader.
+
+As such, we decided to switch to a market-neutral market-making approach instead, whereby we seeked to profit from trading the bid-ask spread. This was implemented in the following strategies:
+- Mid-price trader. Refer to [midtrader.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/midtrader.py)
+- Mid-price trader with adjustment for current inventory levels. Theoretically this should be more profitable than the midtrader above, but it was not the case for us. Refer to [midtraderInvAdj.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/midtraderInvAdj.py)
+- Avellaneda-Stoikov Market Making Model. This model allowed us to adjust for inventory and volatility in a much more profitable way. Refer to [ASModel.py](https://github.com/keanekwa/Optiver-Ready-Trader-Go/blob/main/ASModel.py)
 
 From extensive testing, we concluded that the Avellaneda-Stoikov Market Making Model was the most reliable model across different market conditions.
 
