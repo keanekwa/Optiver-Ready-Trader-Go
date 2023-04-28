@@ -33,7 +33,7 @@ This model works by finding an optimal reservation price (i.e. fair price we wis
 
 ## How to Run the Model(s)
 
-To run Ready Trader Go, you'll need Python version 3.11 or above and [PySide6](https://pypi.org/project/PySide6/). To install PySide6, you can run:
+You'll need Python version 3.11 or above and [PySide6](https://pypi.org/project/PySide6/) for the GUI. To install PySide6, you can run:
 ```
 pip3 install PySide6
 ```
