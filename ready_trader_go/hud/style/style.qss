@@ -1,0 +1,101 @@
+QWidget {
+  background-color: $BackgroundColour;
+  border: 0px solid $AlternateBackgroundColour;
+  padding: 0px;
+  color: $ForegroundColour;
+  selection-background-color: $SelectionBackgroundColour;
+  selection-color: $SelectionForegroundColour;
+}
+
+QAbstractItemView {
+  border: 1px solid $AlternateBackgroundColour;
+  border-radius: 4px;
+  color: $ForegroundColour;
+}
+
+QMenuBar {
+  background-color: $AlternateBackgroundColour;
+  border: 1px solid $BackgroundColour;
+  color: $ForegroundColour;
+  padding: 2px;
+}
+
+QMenuBar:focus {
+  border: 1px solid $HighlightColour;
+}
+
+QMenuBar::item {
+  background: transparent;
+  padding: 4px;
+}
+
+QMenuBar::item:selected {
+  background: transparent;
+  border: 0px solid $SelectionBackgroundColour;
+  padding: 4px;
+}
+
+QMenuBar::item:pressed {
+  background-color: $HighlightColour;
+  border: 0px solid $SelectionBackgroundColour;
+  color: #F0F0F0;
+  margin-bottom: 0px;
+  padding: 4px;
+  padding-bottom: 0px;
+}
+
+QMenu {
+  border: 0px solid $AlternateBackgroundColour;
+  color: $ForegroundColour;
+  margin: 0px;
+}
+
+QMenu::item {
+  background-color: $AlternateBackgroundColour;
+  border: 1px transparent $AlternateBackgroundColour;
+  padding: 4px 8px 4px 8px;
+}
+
+QMenu::item:selected {
+  background-color: $HighlightColour;
+  color: $SelectionForegroundColour;
+}
+
+QMenu::separator {
+  height: 1px;
+  background-color: $BackgroundColour;
+  color: $ForegroundColour;
+}
+
+QLabel {
+  background-color: $BackgroundColour;
+  border: 0px solid $AlternateBackgroundColour;
+  color: $ForegroundColour;
+  padding: 2px;
+  margin: 0px;
+}
+
+QMdiSubWindow {
+  border: 4px solid $AlternateBackgroundColour;
+  color: #505050;
+  selection-background-color: $SelectionBackgroundColour;
+}
+
+QSizeGrip {
+  background: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+QStatusBar {
+  background: $AlternateBackgroundColour;
+  border: 1px solid $AlternateBackgroundColour;
+}
+
+QStatusBar::item {
+  border: none;
+}
+
+QStatusBar QLabel {
+  background: transparent;
+}

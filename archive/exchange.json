@@ -1,0 +1,59 @@
+{
+	"Engine": {
+		"MarketDataFile": "data/market_data1.csv",
+		"MarketEventInterval": 0.05,
+		"MarketOpenDelay": 5.0,
+		"MatchEventsFile": "match_events.csv",
+		"ScoreBoardFile": "score_board.csv",
+		"Speed": 1.0,
+		"TickInterval": 0.25
+	},
+	"Execution": {
+		"Host": "127.0.0.1",
+		"Port": 12345
+	},
+	"Fees": {
+		"Maker": -0.0001,
+		"Taker": 0.0002
+	},
+	"Hud": {
+		"Host": "127.0.0.1",
+		"Port": 12347
+	},
+	"Information": {
+		"Type": "mmap",
+		"Name": "info.dat"
+	},
+	"Instrument": {
+		"EtfClamp": 0.002,
+		"TickSize": 1.0
+	},
+	"Limits": {
+		"ActiveOrderCountLimit": 10,
+		"ActiveVolumeLimit": 200,
+		"MessageFrequencyInterval": 1.0,
+		"MessageFrequencyLimit": 50,
+		"PositionLimit": 100
+	},
+	"Traders": {
+		"AutoTrader": "secret",
+		"MidTrader": "secret",
+		"Arbitrage1": "secret",
+		"Arbitrage2": "secret",
+		"Arbitrage3": "secret",
+		"Arbitrage4": "secret",
+		"MomentumArbitrage1": "secret",
+		"MomentumArbitrage2": "secret",
+		"MomentumArbitrage3": "secret",
+		"MomentumArbitrage4": "secret",
+		"MomentumArbitrage5": "secret",
+		"MomentumArbitrage6": "secret",
+		"AutoTraderWithMomentumHedge": "secret",
+		"ASModel": "secret",
+		"ASModel2": "secret",
+		"ASModel3": "secret",
+		"ASModel4": "secret",
+		"ASModel5": "secret",
+		"AutoTraderUnhedged": "secret"
+	}
+}

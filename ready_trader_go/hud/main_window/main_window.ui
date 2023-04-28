@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_window</class>
+ <widget class="QMainWindow" name="main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1156</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ready Trader Go</string>
+  </property>
+  <widget class="QWidget" name="central_widget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdi_area">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1156</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="quit_action"/>
+   </widget>
+   <widget class="QMenu" name="reopen_window_menu">
+    <property name="title">
+     <string>&amp;Reopen Window</string>
+    </property>
+    <addaction name="future_dynamic_depth_action"/>
+    <addaction name="etf_dynamic_depth_action"/>
+    <addaction name="all_teams_profit_table_action"/>
+    <addaction name="team_active_orders_table_action"/>
+    <addaction name="team_trade_history_table_action"/>
+    <addaction name="midpoint_price_chart_action"/>
+    <addaction name="profit_loss_chart_action"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="reopen_window_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="quit_action">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="etf_dynamic_depth_action">
+   <property name="text">
+    <string>&amp;ETF Dynamic Depth</string>
+   </property>
+  </action>
+  <action name="future_dynamic_depth_action">
+   <property name="text">
+    <string>&amp;Future Dynamic Depth</string>
+   </property>
+  </action>
+  <action name="team_active_orders_table_action">
+   <property name="text">
+    <string>Team Active &amp;Orders Table</string>
+   </property>
+  </action>
+  <action name="action_team_compare">
+   <property name="text">
+    <string>Team &amp;Compare</string>
+   </property>
+  </action>
+  <action name="actionPrice_Ladder_FUT">
+   <property name="text">
+    <string>Price Ladder : FUT</string>
+   </property>
+  </action>
+  <action name="profit_loss_chart_action">
+   <property name="text">
+    <string>&amp;Profit Loss Chart</string>
+   </property>
+  </action>
+  <action name="action_tile_windows">
+   <property name="text">
+    <string>Tile &amp;Windows</string>
+   </property>
+  </action>
+  <action name="midpoint_price_chart_action">
+   <property name="text">
+    <string>&amp;Midpoint Price Chart</string>
+   </property>
+  </action>
+  <action name="team_trade_history_table_action">
+   <property name="text">
+    <string>Team Trade &amp;History Table</string>
+   </property>
+  </action>
+  <action name="all_teams_profit_table_action">
+   <property name="text">
+    <string>&amp;All Teams Profit Table</string>
+   </property>
+  </action>
+  <action name="tile_subwindows_action">
+   <property name="text">
+    <string>Tile Subwindows</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
