@@ -68,6 +68,6 @@ To backtest against different market data, update the "MarketDataFile" attribute
 - [Hummingbot Foundation. (2021). A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://blog.hummingbot.org/2021-04-avellaneda-stoikov-market-making-strategy/)
 
 ## Collaborators
-- (Beckham Wee)[https://github.com/bckhm]
-- (Riley Ang)[https://github.com/rileyang1]
+- [Beckham Wee](https://github.com/bckhm)
+- [Riley Ang](https://github.com/rileyang1)
 - Regan Tan
