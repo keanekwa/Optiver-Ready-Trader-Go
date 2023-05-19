@@ -66,3 +66,8 @@ To backtest against different market data, update the "MarketDataFile" attribute
 ## References
 - [Avellaneda M. & Stoikov S. (2006). High Frequency Trading in a Limit Order Book](https://www.researchgate.net/publication/24086205_High_Frequency_Trading_in_a_Limit_Order_Book)
 - [Hummingbot Foundation. (2021). A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://blog.hummingbot.org/2021-04-avellaneda-stoikov-market-making-strategy/)
+
+## Collaborators
+- (Beckham Wee)[https://github.com/bckhm]
+- (Riley Ang)[https://github.com/rileyang1]
+- Regan Tan
